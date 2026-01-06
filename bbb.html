@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M Hussain | Front-End Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-white shadow fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">M Hussain</h1>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white px-4 pb-4 space-y-2">
+    <a href="#home" class="block">Home</a>
+    <a href="#about" class="block">About</a>
+    <a href="#projects" class="block">Projects</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="pt-32 pb-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Front-End Developer
+      </h2>
+      <p class="text-gray-600 mb-6">
+        HTML • CSS • Bootstrap • Tailwind CSS
+      </p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Hire Me
+      </a>
+    </div>
+
+    <img src="https://via.placeholder.com/500x400"
+         class="rounded-xl shadow-lg w-full"
+         alt="Developer">
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-gray-600">
+      I convert Figma & PSD designs into responsive and pixel-perfect HTML websites.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-6 bg-gray-100 rounded shadow">HTML5</div>
+      <div class="p-6 bg-gray-100 rounded shadow">CSS3</div>
+      <div class="p-6 bg-gray-100 rounded shadow">Bootstrap</div>
+      <div class="p-6 bg-gray-100 rounded shadow">Tailwind CSS</div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded shadow">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t">
+        <div class="p-4">
+          <h4 class="font-bold">Landing Page</h4>
+          <p class="text-sm text-gray-600">Tailwind responsive landing page.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded shadow">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t">
+        <div class="p-4">
+          <h4 class="font-bold">Business Website</h4>
+          <p class="text-sm text-gray-600">Bootstrap business website.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded shadow">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t">
+        <div class="p-4">
+          <h4 class="font-bold">Figma to HTML</h4>
+          <p class="text-sm text-gray-600">Pixel-perfect conversion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name"
+        class="w-full p-3 border rounded">
+      <input type="email" placeholder="Your Email"
+        class="w-full p-3 border rounded">
+      <textarea placeholder="Your Message"
+        class="w-full p-3 border rounded"></textarea>
+      <button class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  © 2026 M Hussain | Front-End Developer
+</footer>
+
+<!-- JS -->
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  btn.onclick = () => menu.classList.toggle("hidden");
+</script>
+
+</body>
+</html>
